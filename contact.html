@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top px-4">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+
+    <!-- LEFT -->
+    <div class="d-flex align-items-center gap-2">
+
+      <!-- Hamburger -->
+      <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold m-0" href="index.html">
+        Online Shop
+      </a>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="d-flex align-items-center gap-2">
+
+      <!-- Dark Mode -->
+      <button id="darkToggle" class="icon-btn" aria-label="Toggle dark mode">
+        <i class="fa-regular fa-moon"></i>
+      </button>
+
+      <!-- Cart -->
+      <a href="cart.html" class="icon-btn position-relative" aria-label="Shopping cart">
+        <i class="fa fa-bag-shopping"></i>
+        <span id="cart-count" class="cart-badge">0</span>
+      </a>
+
+    </div>
+
+  </div>
+
+  <!-- MENU -->
+  <div class="collapse navbar-collapse mt-3" id="navbarMenu">
+    <ul class="navbar-nav mx-auto text-lg-center text-start">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="shop.html">Shop</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link active" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact-section fade-in">
+
+  <div class="container">
+
+    <div class="row align-items-center g-5">
+
+      <!-- LEFT -->
+      <div class="col-lg-6">
+
+        <h2 class="contact-title">
+          Contact Us
+        </h2>
+
+        <p class="contact-subtitle">
+          We'd love to hear from you. Send us a message!
+        </p>
+
+        <div class="contact-info">
+
+          <!-- ADDRESS -->
+          <div class="contact-item fade-in">
+
+            <div class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <div>
+              <h6>ADDRESS</h6>
+              <p>42 Fashion Ave, New York, NY 10001</p>
+            </div>
+
+          </div>
+
+          <!-- EMAIL -->
+          <div class="contact-item fade-in">
+
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div>
+              <h6>EMAIL</h6>
+              <p>support@gmail.com</p>
+            </div>
+
+          </div>
+
+          <!-- PHONE -->
+          <div class="contact-item fade-in">
+
+            <div class="contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <div>
+              <h6>PHONE</h6>
+              <p>+1 (800) 555 467</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="col-lg-6">
+
+        <!-- SUCCESS MESSAGE -->
+        <div id="formMsg"
+             class="alert alert-success d-none mb-4">
+
+          Message sent successfully!
+
+        </div>
+
+        <!-- FORM -->
+        <form id="contactForm" class="contact-form">
+
+          <!-- NAME -->
+          <label for="name">Name</label>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          >
+
+          <!-- EMAIL -->
+          <label for="email">Email</label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your@email.com"
+            required
+          >
+
+          <!-- MESSAGE -->
+          <label for="message">Message</label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="How can we help?"
+            required
+          ></textarea>
+
+          <!-- BUTTON -->
+          <button
+            type="submit"
+            class="btn-pink w-100 mt-2">
+
+            Send Message
+
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-section text-white pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 mb-4">
+        <h4 class="fw-bold">Online Shop</h4>
+        <p class="text-white">
+          Your destination for stylish bags, shoes & accessories.
+        </p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h6 class="fw-bold">SHOP</h6>
+        <ul class="list-unstyled">
+           <li><a href="shop.html?category=bags" class="footer-link">Bags</a></li>
+          <li><a href="shop.html?category=shoes" class="footer-link">Shoes</a></li>
+          <li><a href="shop.html?category=accessories" class="footer-link">Accessories</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h6 class="fw-bold">INFO</h6>
+        <ul class="list-unstyled">
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary">
+
+       <p class="text-center text-white small mb-0">
+      © 2026 Online Shop. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Main JS -->
+<script src="js/main.js"></script>
+
+<!-- Contact JS -->
+<script src="js/contact.js"></script>
+
+<!-- Shop JS -->
+<script src="js/shop.js"></script>
+
+</body>
+</html>
